@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Welcome to your Dashboard!</h2>
+
+    <!-- Task Form -->
+    <form th:action="@{/add-task}" method="post">
+        <label for="task">Enter Task:</label>
+        <input type="text" id="task" name="task" />
+        <button type="submit">Add Task</button>
+    </form>
+
+    <!-- List of Tasks -->
+    <div>
+        <h3>Your Tasks</h3>
+        <!-- This section can be populated dynamically with tasks -->
+        <ul>
+            <li>Example Task 1</li>
+            <li>Example Task 2</li>
+        </ul>
+    </div>
+
+    <!-- Log Out Button -->
+    <form th:action="@{/logout}" method="post">
+        <button type="submit">Log Out</button>
+    </form>
+</body>
+</html>

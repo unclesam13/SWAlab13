@@ -7,9 +7,9 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import com.example.model.User;
-import com.example.repository.UserRepository;
-import com.example.service.UserService;
+import src.model.User;
+import src.repository.UserRepository;
+import src.service.UserService;
 import java.util.Optional;
 
 public class UserServiceTest {

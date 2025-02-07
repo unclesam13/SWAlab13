@@ -1,5 +1,6 @@
+package com.example.SWAlab13.User.model;
+
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 import java.time.LocalDateTime;
 
@@ -15,7 +16,7 @@ public class Task {
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
-    @NotBlank //Added it bcs it's greater than zero
+    @Column(nullable = false)
     private String title;
 
     private String description;

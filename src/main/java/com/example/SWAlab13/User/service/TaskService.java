@@ -1,4 +1,12 @@
+package com.example.SWAlab13.User.service;
+
 import org.springframework.stereotype.Service;
+
+import com.example.SWAlab13.User.model.Task;
+import com.example.SWAlab13.User.model.User;
+import com.example.SWAlab13.User.repository.TaskRepository;
+import com.example.SWAlab13.User.repository.UserRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 import org.springframework.security.core.context.SecurityContextHolder;

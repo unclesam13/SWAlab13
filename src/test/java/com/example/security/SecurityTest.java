@@ -8,9 +8,9 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import src.main.java.model.User;
-import com.example.repository.UserRepository;
-import com.example.service.CustomUserDetailsService;
+import src.model.User;
+import src.repository.UserRepository;
+import src.service.UserService;
 
 import java.util.Optional;
 
